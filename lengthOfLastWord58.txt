@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+
+"""This is solution to the Leetcode problem number 58 Length of Last Word"""
+
+class Solution:
+	def lengthOfLastWord(self, s: str) -> int:
+		s = s.split()
+		s = s[::-1]
+		return len(s[0])
